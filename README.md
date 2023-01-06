@@ -28,3 +28,19 @@ df = spark.createDataFrame(data=dataDictionary, schema = ["name","properties"])
 df.printSchema()
 df.show(truncate=False)
 ```
+
+In the console output you should see the following:
+```
+root
+ |-- name: string (nullable = true)
+ |-- properties: map (nullable = true)
+ |    |-- key: string
+ |    |-- value: string (valueContainsNull = true)
+
++---------+-----------------------------+
+|name     |properties                   |
++---------+-----------------------------+
+|James    |{eye -> brown, hair -> black}|
+|Jefferson|{eye -> , hair -> red}       |
++---------+-----------------------------+
+```
