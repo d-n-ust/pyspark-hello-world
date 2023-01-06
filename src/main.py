@@ -6,9 +6,6 @@ spark = SparkSession\
 
 dataDictionary = [
         ('James',{'hair':'black','eye':'brown'}),
-        ('Michael',{'hair':'brown','eye':None}),
-        ('Robert',{'hair':'red','eye':'black'}),
-        ('Washington',{'hair':'red','eye':'grey'}),
         ('Jefferson',{'hair':'red','eye':''})
 ]
 
